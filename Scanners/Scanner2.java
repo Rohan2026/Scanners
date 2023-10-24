@@ -1,18 +1,18 @@
 import java.util.Scanner;
 
-public class MyScanner
+public class Scanner2
 {
 
     public void run() {
         Scanner scanner = new Scanner(System.in).useDelimiter(",");
         while (true) {
-            int str = scanner.nextInt();
-            System.out.println(str * 3);
+            String str = scanner.next();
+            System.out.println(str);
         }
     }
 
     public static void main(String[] args) {
-        MyScanner myScanner = new MyScanner();
+        Scanner2 myScanner = new Scanner2();
         myScanner.run();
     }
 }
